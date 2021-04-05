@@ -1,0 +1,56 @@
+.profile {
+  height: 100vh;
+  background-color: #ffffff;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+.container {
+  width: 80%;
+  margin: 180px auto;
+  text-align: center;
+}
+.container > h2 {
+  font-size: 60px;
+  opacity: 0.7;
+}
+.container > h2:after {
+  content: "";
+  display: block;
+  width: 250px;
+  height: 3px;
+  margin: 8px auto 0 auto;
+  background-color: #cc4b3a;
+}
+
+.profile_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.profile_message {
+  width: 55%;
+}
+.profile_message h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+.image_wrapper {
+  width: 45%;
+  margin-top: 35px;
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 300px;
+  height: 300px;
+  border-radius: 1000px;
+  opacity: 0.8;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.4);
+}

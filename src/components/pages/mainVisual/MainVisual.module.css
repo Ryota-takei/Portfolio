@@ -1,0 +1,20 @@
+.main_visual {
+  height: 100vh;
+  background-image: url("../../../images/mainVisual.jpg");
+  background-size: cover;
+  opacity: 0.9;
+  text-align: center;
+  align-items: center;
+  z-index: 1;
+}
+
+
+.heading {
+  margin: 0 auto;
+  padding-top: 300px;
+  font-family: "Raleway", sans-serif;
+  font-size: 64px;
+  color: #f3f3f3;
+  font-family: Lora;
+  font-weight: bold;
+}

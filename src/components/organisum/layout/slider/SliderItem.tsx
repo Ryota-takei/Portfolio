@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-import comingSoon from "../../../../images/comingSoon.jpg"
+import comingSoon from "../../../../images/comingSoon.jpg";
 import styles from "./SliderItem.module.css";
 import { WorksCard } from "../../worksCard/WorksCard";
 
@@ -21,7 +21,7 @@ export const SliderItem: VFC = () => {
           />
         </div>
         <div className={styles.card_wrapper}>
-        <WorksCard
+          <WorksCard
             imageUrl={comingSoon}
             workName="COMING SOON"
             description="COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON"
@@ -30,10 +30,22 @@ export const SliderItem: VFC = () => {
           />
         </div>
         <div className={styles.card_wrapper}>
-          <h3>3</h3>
+          <WorksCard
+            imageUrl={comingSoon}
+            workName="COMING SOON"
+            description="COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON"
+            worksUrl="/"
+            github="/"
+          />
         </div>
         <div className={styles.card_wrapper}>
-          <h3>4</h3>
+          <WorksCard
+            imageUrl={comingSoon}
+            workName="COMING SOON"
+            description="COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON"
+            worksUrl="/"
+            github="/"
+          />
         </div>
       </Slider>
     </div>

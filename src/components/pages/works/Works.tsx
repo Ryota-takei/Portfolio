@@ -7,10 +7,10 @@ export const Works: VFC = () => {
   return (
     <div className={styles.works}>
       <div className={styles.container}>
-      <h2>Works</h2>
-      <div className={styles.slider_wrapper}>
-        <SliderItem />
-      </div>
+        <h2>Works</h2>
+        <div className={styles.slider_wrapper}>
+          <SliderItem />
+        </div>
       </div>
     </div>
   );

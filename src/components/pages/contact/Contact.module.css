@@ -1,14 +1,11 @@
-.works {
+.profile {
   height: 100vh;
-  background-image:url("../../../images/sea.jpg");
-  background-size: cover;
-  background-position: center;
+  background-color: #ffffff;
   align-items: center;
   width: 100%;
   position: fixed;
   top: 0px;
 }
-
 .container {
   width: 80%;
   margin: 180px auto;

@@ -1,61 +1,16 @@
-import { set, useForm } from "react-hook-form";
-import { Button, DrawerHeader } from "@chakra-ui/react";
+import { useForm } from "react-hook-form";
+import { Button } from "@chakra-ui/react";
 import styles from "./ContactForm.module.css";
-import { useToast } from "@chakra-ui/react";
-import { useState } from "react";
 import { Spinner } from "@chakra-ui/react";
-
-interface Input {
-  name: string;
-  email: string;
-  contact: string;
-}
+import { useContact } from "../../../../hooks/useContact";
 
 export const ContactForm = () => {
-  const [loading, setLoading] = useState<boolean>(false);
+  const { onSubmit, loading } = useContact();
   const {
-    register,
     handleSubmit,
-    reset,
+    register,
     formState: { errors },
   } = useForm();
-  const toast = useToast();
-  const url: any = process.env.REACT_APP_APP_URL;
-
-  const onSubmit = async (data: Input) => {
-    setLoading(true);
-
-    const payload: object = {
-      text:
-        "お問い合わせがありました\n" +
-        "お名前: " +
-        data.name +
-        "\n" +
-        "メールアドレス: " +
-        data.email +
-        "\n" +
-        "【問い合わせ内容】\n" +
-        data.contact,
-    };
-
-    await fetch(url, {
-      method: "POST",
-      body: JSON.stringify(payload),
-    })
-      .then(() => {
-        reset();
-      })
-      .catch((e) => {
-        alert(e.message);
-      })
-      .finally(() => {
-        setLoading(false);
-        toast({
-          title: "お問合せいただきありがとう御座います。改めてご連絡いたします",
-          isClosable: true,
-        });
-      });
-  };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>

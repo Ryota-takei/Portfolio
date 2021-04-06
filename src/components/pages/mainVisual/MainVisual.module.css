@@ -18,3 +18,10 @@
   font-weight: bold;
   opacity: 0.8;
 }
+
+@media screen and (max-width: 750px) {
+  .heading {
+    padding-top: 250px;
+    font-size: 45px;
+  }
+}

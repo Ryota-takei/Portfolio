@@ -94,10 +94,10 @@ const settings: any = {
   prevArrow: <PrevArrow />,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1100,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         infinite: true,
         dots: true,
       },
@@ -105,9 +105,9 @@ const settings: any = {
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        initialSlide: 2,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 1,
       },
     },
     {

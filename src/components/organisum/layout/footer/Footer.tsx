@@ -1,15 +1,19 @@
 import { useContext, VFC } from "react";
 import { Link } from "react-router-dom";
 import { StateContext } from "../../../../providers/StateProvider";
-import styles from "./Header.module.css";
+import styles from "./Footer.module.css";
 
-export const Header: VFC = () => {
+export const Footer: VFC = () => {
+ 
   const { menubarColor, setMenubarColor } = useContext(StateContext);
 
   return (
-    <div className={menubarColor ? styles.none_color_Header : styles.color_Header}>
+    <div
+      className={`${styles.footer} ${
+        menubarColor ? styles.none_color_Footer :styles.color_footer
+      }`}
+    >
       <div className={styles.container}>
-        <h3 className={styles.heading}>My portfolio</h3>
         <ul className={styles.list}>
           <li>
             <Link

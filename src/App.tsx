@@ -1,11 +1,13 @@
 import { BrowserRouter } from "react-router-dom";
-import { MainVisual } from "./components/pages/mainVisual/MainVisual";
+import { StateProvider } from "./providers/StateProvider";
 import { Router } from "./router/Router";
 
 function App() {
   return (
     <BrowserRouter>
-      <Router />
+      <StateProvider>
+        <Router />
+      </StateProvider>
     </BrowserRouter>
   );
 }

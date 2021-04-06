@@ -1,4 +1,3 @@
-import React from "react";
 import { ContactForm } from "../../organisum/layout/contactForm/ContactForm";
 
 import styles from "./Contact.module.css";

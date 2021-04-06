@@ -53,3 +53,16 @@
   height: 50px !important;
   opacity: 0.9;
 }
+
+@media screen and (max-width: 600px) {
+  .container{
+    width: 80%;
+  }
+ }
+
+ @media screen and (max-width: 450px) {
+  .container{
+    width: 90%;
+  }
+ 
+ }

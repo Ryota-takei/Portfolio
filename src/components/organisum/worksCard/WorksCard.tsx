@@ -15,10 +15,10 @@ export const WorksCard: VFC<Props> = (props) => {
   const { imageUrl, workName, description, worksUrl, github } = props;
 
   return (
-    <Box maxW="sm"  borderRadius="lg" overflow="hidden" mx="auto">
+    <Box maxW="sm" borderRadius="lg" overflow="hidden" mx="auto">
       <Box
-        w="380px"
-        h="420px"
+        w={{ base: "235px", sm: "300px", md: "330", lg: "350" }}
+        h={{ base: "460px", sm: "440" }}
         bg="#ffff"
         borderRadius="10px"
         shadow="md"
@@ -44,7 +44,7 @@ export const WorksCard: VFC<Props> = (props) => {
             Description
           </Text>
           <Text fontSize="sm">{description}</Text>
-          <Text ontSize="lg" fontWeight="bold">
+          <Text fontSize="lg" fontWeight="bold">
             <a className={styles.link} href={worksUrl}>
               Website
             </a>{" "}

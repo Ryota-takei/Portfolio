@@ -8,7 +8,6 @@
   z-index: 1;
 }
 
-
 .heading {
   margin: 0 auto;
   padding-top: 300px;
@@ -17,4 +16,5 @@
   color: #f3f3f3;
   font-family: Lora;
   font-weight: bold;
+  opacity: 0.8;
 }

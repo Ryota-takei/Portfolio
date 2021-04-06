@@ -25,12 +25,16 @@ export const Header: VFC = () => {
             </Link>
           </li>
           <li>
-            <Link to="/works" className={styles.link} onClick={() => setTop(false)}>
+            <Link
+              to="/works"
+              className={styles.link}
+              onClick={() => setTop(true)}
+            >
               Works
             </Link>
           </li>
           <li>
-            <Link to="/" className={styles.link} onClick={() => setTop(false)}>
+            <Link to="/contact" className={styles.link} onClick={() => setTop(false)}>
               Contact
             </Link>
           </li>

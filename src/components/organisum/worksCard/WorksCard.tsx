@@ -21,7 +21,6 @@ export const WorksCard: VFC<Props> = (props) => {
         h={{ base: "460px", sm: "440" }}
         bg="#ffff"
         borderRadius="10px"
-        shadow="md"
         p={4}
         m={5}
         mx="auto"

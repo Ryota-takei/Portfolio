@@ -52,6 +52,19 @@
   opacity: 0.8;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.4);
 }
+.sns {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.sns span {
+  font-size: 22px;
+  opacity: 0.9;
+}
+
+.sns span:hover {
+  opacity: 0.5;
+}
+
 
 @media screen and (max-width: 950px) {
   .container {
@@ -79,6 +92,7 @@
     width: 90%;
     margin: 15px auto;
   }
+
 }
 
 @media screen and (max-width: 450px) {

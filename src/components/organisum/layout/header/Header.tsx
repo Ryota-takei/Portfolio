@@ -7,7 +7,9 @@ export const Header: VFC = () => {
   const { menubarColor, setMenubarColor } = useContext(StateContext);
 
   return (
-    <div className={menubarColor ? styles.none_color_Header : styles.color_Header}>
+    <div
+      className={menubarColor ? styles.none_color_Header : styles.color_Header}
+    >
       <div className={styles.container}>
         <h3 className={styles.heading}>My portfolio</h3>
         <ul className={styles.list}>

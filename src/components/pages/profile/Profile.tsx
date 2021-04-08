@@ -49,7 +49,6 @@ export const Profile: VFC = () => {
                   </span>
               </a>
             </div>
-           
             <p>
               便利なサービスを自らの手で生み出して、
               <br />

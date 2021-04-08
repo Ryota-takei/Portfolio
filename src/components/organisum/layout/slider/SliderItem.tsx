@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 import comingSoon from "../../../../images/comingSoon.jpg";
+import portfolio from "../../../../images/portfolio.png";
 import styles from "./SliderItem.module.css";
 import { WorksCard } from "../../worksCard/WorksCard";
 
@@ -13,11 +14,11 @@ export const SliderItem: VFC = () => {
       <Slider {...settings}>
         <div className={styles.card_wrapper}>
           <WorksCard
-            imageUrl={comingSoon}
-            workName="COMING SOON"
-            description="COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON"
-            worksUrl="/"
-            github="/"
+            imageUrl={portfolio}
+            workName="My portfolio"
+            description="React＋Amplifyを用いて作成した本サイトになります。React hooks,React context, カスタムフック、アトミックデザインを意識した設計となっています。"
+            worksUrl="https://www.ryota-portfolio.com/"
+            github="https://github.com/Ryota-takei/Portfolio"
           />
         </div>
         <div className={styles.card_wrapper}>

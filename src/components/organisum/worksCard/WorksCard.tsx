@@ -29,7 +29,7 @@ export const WorksCard: VFC<Props> = (props) => {
         <Stack textAlign="center">
           <Image
             borderRadius="full"
-            boxSize="200px"
+            boxSize="180px"
             src={imageUrl}
             alt={workName}
             m="auto"
@@ -38,11 +38,11 @@ export const WorksCard: VFC<Props> = (props) => {
           <Text className={styles.title} fontSize="lg" fontWeight="bold">
             Title
           </Text>
-          <Text fontSize="sm">{workName}</Text>
+          <Text fontSize="lg" fontWeight="bold">{workName}</Text>
           <Text className={styles.title} fontSize="lg" fontWeight="bold">
             Description
           </Text>
-          <Text fontSize="sm">{description}</Text>
+          <Text fontSize="sm" fontWeight="bold">{description}</Text>
           <Text fontSize="lg" fontWeight="bold">
             <a className={styles.link} href={worksUrl}>
               Website

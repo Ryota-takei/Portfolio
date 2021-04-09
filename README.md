@@ -1,7 +1,10 @@
+  
 ## My portfolio
 
 作成したportfolioを順次掲載していくサイトになります。  
-　　
+　
+  
+![portfolio](https://user-images.githubusercontent.com/76856337/114117690-34e08800-9922-11eb-8bf2-f603575fd5ed.png)
 
 ## URL  
 

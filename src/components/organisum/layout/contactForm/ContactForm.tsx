@@ -3,14 +3,23 @@ import { Button } from "@chakra-ui/react";
 import styles from "./ContactForm.module.css";
 import { Spinner } from "@chakra-ui/react";
 import { useContact } from "../../../../hooks/useContact";
+import {Input} from "../../../../types/InputTypes"
+
+
 
 export const ContactForm = () => {
-  const { onSubmit, loading } = useContact();
+  const { sendValue, loading } = useContact();
   const {
     handleSubmit,
     register,
     formState: { errors },
+    reset
   } = useForm();
+
+  const onSubmit = (data:Input) => {
+    sendValue(data)
+    reset();
+  }
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
@@ -19,7 +28,7 @@ export const ContactForm = () => {
           <p className={styles.labelTitle}>Name</p>
           <input
             type="text"
-            placeholder="お名前"
+            placeholder=" お名前"
             {...register("name", { required: true, maxLength: 100 })}
           />
           {errors.name && (
@@ -30,7 +39,7 @@ export const ContactForm = () => {
           <p className={styles.labelTitle}>Email</p>
           <input
             type="text"
-            placeholder="メールアドレス"
+            placeholder=" メールアドレス"
             {...register("email", {
               required: true,
               pattern: /^[a-zA-Z0-9.!#$%&'*+\\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
@@ -43,7 +52,7 @@ export const ContactForm = () => {
         <label>
           <p className={styles.labelTitle}>Contact</p>
           <textarea
-            placeholder="お問い合わせ内容"
+            placeholder=" お問い合わせ内容"
             {...register("contact", {
               required: true,
             })}

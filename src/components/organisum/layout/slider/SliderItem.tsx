@@ -5,6 +5,7 @@ import Slider from "react-slick";
 
 import comingSoon from "../../../../images/comingSoon.jpg";
 import portfolio from "../../../../images/portfolio.png";
+import Weather_App from "../../../../images/Weather_app.png";
 import styles from "./SliderItem.module.css";
 import { WorksCard } from "../../worksCard/WorksCard";
 
@@ -23,11 +24,11 @@ export const SliderItem: VFC = () => {
         </div>
         <div className={styles.card_wrapper}>
           <WorksCard
-            imageUrl={comingSoon}
-            workName="COMING SOON"
-            description="COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON"
-            worksUrl="/"
-            github="/"
+            imageUrl={Weather_App}
+            workName="Weather App"
+            description="現在地もしくは検索した地域の天気情報を取得して表示するアプリです。React, TypeScript,Redux toolkit,外部APIに慣れる一環で作成しました。"
+            worksUrl="https://main.d3ie72edj5o6du.amplifyapp.com/"
+            github="https://github.com/Ryota-takei/weather_app"
           />
         </div>
         <div className={styles.card_wrapper}>

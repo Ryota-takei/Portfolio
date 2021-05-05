@@ -8,7 +8,7 @@
 
 ## URL  
 
-https://ryota-portfolio.com/  
+https://www.ryota-portfolio.com
 　　
 
 ## 作成した目的　

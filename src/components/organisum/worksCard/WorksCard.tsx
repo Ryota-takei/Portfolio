@@ -15,15 +15,15 @@ export const WorksCard: VFC<Props> = (props) => {
   const { imageUrl, workName, description, worksUrl, github } = props;
 
   return (
-    <Box maxW="sm" borderRadius="lg" overflow="hidden" mx="auto">
+    <Box borderRadius="lg" overflow="hidden" textAlign="center">
       <Box
-        w={{ base: "235px", sm: "300px", md: "330", lg: "350" }}
-        h={{ base: "460px", sm: "440" }}
+        style={{ margin: "auto" }}
+        w={{ base: "240px", sm: "300px", md: "320px", lg: "350px" }}
+        h={{ base: "470px", sm: "440" }}
         bg="#ffff"
         borderRadius="10px"
-        p={4}
-        m={5}
-        mx="auto"
+        p={{ base: "1", md: "3" }}
+        m={{ base: "0", md: "5" }}
         opacity="0.8"
       >
         <Stack textAlign="center">
@@ -38,11 +38,15 @@ export const WorksCard: VFC<Props> = (props) => {
           <Text className={styles.title} fontSize="lg" fontWeight="bold">
             Title
           </Text>
-          <Text fontSize="lg" fontWeight="bold">{workName}</Text>
+          <Text fontSize="lg" fontWeight="bold">
+            {workName}
+          </Text>
           <Text className={styles.title} fontSize="lg" fontWeight="bold">
             Description
           </Text>
-          <Text fontSize="sm" fontWeight="bold">{description}</Text>
+          <Text fontSize="sm" fontWeight="bold">
+            {description}
+          </Text>
           <Text fontSize="lg" fontWeight="bold">
             <a className={styles.link} href={worksUrl}>
               Website

@@ -6,20 +6,21 @@ import Slider from "react-slick";
 import comingSoon from "../../../../images/comingSoon.jpg";
 import portfolio from "../../../../images/portfolio.png";
 import Weather_App from "../../../../images/Weather_app.png";
+import my_blog from "../../../../images/my_blog.png";
 import styles from "./SliderItem.module.css";
 import { WorksCard } from "../../worksCard/WorksCard";
 
 export const SliderItem: VFC = () => {
   return (
     <div className={styles.container}>
-      <Slider {...settings}>
+      <Slider {...settings} >
         <div className={styles.card_wrapper}>
           <WorksCard
-            imageUrl={portfolio}
-            workName="My portfolio"
-            description="React＋Amplifyを用いて作成した本サイトになります。React hooks,React context, カスタムフック、アトミックデザインを意識した設計となっています。"
-            worksUrl="https://www.ryota-portfolio.com/"
-            github="https://github.com/Ryota-takei/Portfolio"
+            imageUrl={my_blog}
+            workName="Programming Blog"
+            description="学んだことをアウトプットするためのブログサイトを作成しました。"
+            worksUrl="https://www.ryota-programming-blog.com/"
+            github="https://github.com/Ryota-takei/my-blog"
           />
         </div>
         <div className={styles.card_wrapper}>
@@ -29,6 +30,15 @@ export const SliderItem: VFC = () => {
             description="現在地もしくは検索した地域の天気情報を取得して表示するアプリです。React, TypeScript,Redux toolkit,外部APIに慣れる一環で作成しました。"
             worksUrl="https://main.d3ie72edj5o6du.amplifyapp.com/"
             github="https://github.com/Ryota-takei/weather_app"
+          />
+        </div>
+        <div className={styles.card_wrapper}>
+          <WorksCard
+            imageUrl={portfolio}
+            workName="My portfolio"
+            description="React＋Amplifyを用いて作成した本サイトになります。React hooks,React context, カスタムフック、アトミックデザインを意識した設計となっています。"
+            worksUrl="https://www.ryota-portfolio.com/"
+            github="https://github.com/Ryota-takei/Portfolio"
           />
         </div>
         <div className={styles.card_wrapper}>
@@ -88,13 +98,22 @@ const PrevArrow: VFC<any> = (props) => {
 const settings: any = {
   dots: true,
   infinite: true,
-  slidesToShow: 2,
-  slidesToScroll: 2,
+  slidesToShow: 3,
+  slidesToScroll: 3,
   speed: 500,
   lazyLoad: true,
   nextArrow: <NextArrow />,
   prevArrow: <PrevArrow />,
   responsive: [
+    {
+      breakpoint: 1500,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true,
+      },
+    },
     {
       breakpoint: 1100,
       settings: {

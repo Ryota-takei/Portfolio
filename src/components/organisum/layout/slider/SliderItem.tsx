@@ -13,7 +13,7 @@ import { WorksCard } from "../../worksCard/WorksCard";
 export const SliderItem: VFC = () => {
   return (
     <div className={styles.container}>
-      <Slider {...settings} >
+      <Slider {...settings}>
         <div className={styles.card_wrapper}>
           <WorksCard
             imageUrl={my_blog}

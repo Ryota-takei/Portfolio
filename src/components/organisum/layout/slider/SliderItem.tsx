@@ -18,27 +18,33 @@ export const SliderItem: VFC = () => {
           <WorksCard
             imageUrl={my_blog}
             workName="Programming Blog"
-            description="学んだことをアウトプットするためのブログサイトを作成しました。"
+            description={`学んだことをアウトプットするためのブログサイトを作成しました。本格運用は改めて行う予定です。
+            そのため一時的に管理ユーザー側も公開中です。下記のURLからE-mail『GuestUser@gggmail.com』password『12341234』でログインできます。
+            ※現在は新規投稿機能や編集機能は操作いただいて大丈夫です。`}
+            otherInformation="https://www.ryota-programming-blog.com/login"
             worksUrl="https://www.ryota-programming-blog.com/"
             github="https://github.com/Ryota-takei/my-blog"
+            skill="TypeScript/React/ReduxToolkit/Amplify/GraphQL"
           />
         </div>
         <div className={styles.card_wrapper}>
           <WorksCard
             imageUrl={Weather_App}
             workName="Weather App"
-            description="現在地もしくは検索した地域の天気情報を取得して表示するアプリです。React, TypeScript,Redux toolkit,外部APIに慣れる一環で作成しました。"
+            description="現在地もしくは検索した地域の天気情報を取得して表示するアプリです。外部API(OpenWeatherAPI,GoogleMapAPI)に慣れる一環で作成しました。"
             worksUrl="https://main.d3ie72edj5o6du.amplifyapp.com/"
             github="https://github.com/Ryota-takei/weather_app"
+            skill="TypeScript/React/ReduxToolkit/Amplify（デプロイ)"
           />
         </div>
         <div className={styles.card_wrapper}>
           <WorksCard
             imageUrl={portfolio}
             workName="My portfolio"
-            description="React＋Amplifyを用いて作成した本サイトになります。React hooks,React context, カスタムフック、アトミックデザインを意識した設計となっています。"
+            description="React＋Amplifyを用いて作成した本サイトになります。作成したポートフォリオを順次上げていきたいと思います。"
             worksUrl="https://www.ryota-portfolio.com/"
             github="https://github.com/Ryota-takei/Portfolio"
+            skill="TypeScript/React/Amplify(デプロイ)"
           />
         </div>
         <div className={styles.card_wrapper}>
@@ -46,15 +52,7 @@ export const SliderItem: VFC = () => {
             imageUrl={comingSoon}
             workName="COMING SOON"
             description="COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON"
-            worksUrl="/"
-            github="/"
-          />
-        </div>
-        <div className={styles.card_wrapper}>
-          <WorksCard
-            imageUrl={comingSoon}
-            workName="COMING SOON"
-            description="COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON"
+            skill="COMING SOON"
             worksUrl="/"
             github="/"
           />

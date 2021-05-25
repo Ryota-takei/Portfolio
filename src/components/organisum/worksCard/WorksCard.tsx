@@ -12,7 +12,6 @@ import {
   Modal,
   ModalOverlay,
   ModalContent,
-  ModalHeader,
   ModalFooter,
   ModalBody,
   ModalCloseButton,
@@ -26,10 +25,20 @@ interface Props {
   description: string;
   worksUrl: string;
   github: string;
+  otherInformation?: string;
+  skill: string;
 }
 
 export const WorksCard: VFC<Props> = (props) => {
-  const { imageUrl, workName, description, worksUrl, github } = props;
+  const {
+    imageUrl,
+    workName,
+    description,
+    worksUrl,
+    github,
+    otherInformation,
+    skill,
+  } = props;
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
@@ -38,7 +47,7 @@ export const WorksCard: VFC<Props> = (props) => {
         <Box
           style={{ margin: "auto" }}
           w={{ base: "240px", sm: "300px", md: "320px", lg: "350px" }}
-          h={{ base: "350px", md: "420" }}
+          h={{ base: "350px", md: "400" }}
           bg="#ffff"
           borderRadius="10px"
           p={{ base: "1", md: "3" }}
@@ -49,7 +58,7 @@ export const WorksCard: VFC<Props> = (props) => {
             <Image
               borderRadius="5px"
               w={{ base: "240px", sm: "280px", md: "300px", lg: "320px" }}
-              h={{ base: "150px", md: "200px", lg: "250px" }}
+              h={{ base: "150px", md: "230px", lg: "250px" }}
               boxSize="200px"
               src={imageUrl}
               alt={workName}
@@ -68,7 +77,7 @@ export const WorksCard: VFC<Props> = (props) => {
               border="1px"
               w={{ base: "80%", md: "70%" }}
               mt="11"
-              _hover={{bg:"gray.100"}}
+              _hover={{ bg: "gray.100" }}
             >
               VIEW MORE
             </Button>
@@ -93,6 +102,19 @@ export const WorksCard: VFC<Props> = (props) => {
               </Text>
               <Text fontSize="sm" fontWeight="bold">
                 {description}
+              </Text>
+              {otherInformation && (
+                <Text fontSize="sm" fontWeight="bold">
+                  <a href={otherInformation} className={styles.link}>
+                    管理ユーザー用ログインページ
+                  </a>
+                </Text>
+              )}
+              <Text className={styles.title} fontSize="lg" fontWeight="bold">
+                Skills
+              </Text>
+              <Text fontSize="md" fontWeight="bold">
+                {skill}
               </Text>
               <Text fontSize="lg" fontWeight="bold">
                 <a className={styles.link} href={worksUrl}>

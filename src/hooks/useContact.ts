@@ -6,8 +6,7 @@ import {Input} from "../types/InputTypes"
 export const useContact = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const toast = useToast();
-  const url: any = process.env.REACT_APP_APP_URL;
- 
+  const url = process.env.REACT_APP_APP_URL as string
 
   const sendValue = async (data: Input) => {
     setLoading(true);

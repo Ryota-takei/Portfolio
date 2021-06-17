@@ -4,6 +4,7 @@ import myProfilePicture from "../../../images/myProfilePicture.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { Text } from "@chakra-ui/layout";
 
 export const Profile: VFC = () => {
   return (
@@ -49,10 +50,10 @@ export const Profile: VFC = () => {
                   </span>
               </a>
             </div>
-            <p>
+            <Text>
               便利なサービスを生み出し、
-              日本をもっと良い国したいという思いからエンジニアを目指しています。
-            </p>
+              日本をもっと便利で住みやすくしていきたい。
+            </Text>
           </div>
         </div>
       </div>

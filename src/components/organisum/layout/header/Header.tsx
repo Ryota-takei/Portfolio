@@ -1,10 +1,17 @@
-import { useContext, VFC } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useEffect, VFC } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { StateContext } from "../../../../providers/StateProvider";
 import styles from "./Header.module.css";
 
 export const Header: VFC = () => {
   const { menubarColor, setMenubarColor } = useContext(StateContext);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setMenubarColor(true);
+    }
+  }, []);
 
   return (
     <div

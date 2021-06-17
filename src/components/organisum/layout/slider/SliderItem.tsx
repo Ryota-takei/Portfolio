@@ -3,10 +3,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-import comingSoon from "../../../../images/comingSoon.jpg";
 import portfolio from "../../../../images/portfolio.png";
 import Weather_App from "../../../../images/Weather_app.png";
 import my_blog from "../../../../images/my_blog.png";
+import morecon from "../../../../images/morecon.png";
 import styles from "./SliderItem.module.css";
 import { WorksCard } from "../../worksCard/WorksCard";
 
@@ -14,6 +14,16 @@ export const SliderItem: VFC = () => {
   return (
     <div className={styles.container}>
       <Slider {...settings}>
+        <div className={styles.card_wrapper}>
+          <WorksCard
+            imageUrl={morecon}
+            workName="MoreCon"
+            description="『実現して欲しいサービスがあると人』と『実現できる人』を結んで、もっと便利で住みやすい国にしたいと思い制作しました。"
+            skill="TypeScript/React/ReduxToolkit/Amplify/GraphQL"
+            worksUrl="https://www.morecon.net/"
+            github="https://github.com/Ryota-takei/MoreCon"
+          />
+        </div>
         <div className={styles.card_wrapper}>
           <WorksCard
             imageUrl={my_blog}
@@ -45,16 +55,6 @@ export const SliderItem: VFC = () => {
             worksUrl="https://www.ryota-portfolio.com/"
             github="https://github.com/Ryota-takei/Portfolio"
             skill="TypeScript/React/Amplify(デプロイ)"
-          />
-        </div>
-        <div className={styles.card_wrapper}>
-          <WorksCard
-            imageUrl={comingSoon}
-            workName="COMING SOON"
-            description="COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON COMING SOON"
-            skill="COMING SOON"
-            worksUrl="/"
-            github="/"
           />
         </div>
       </Slider>

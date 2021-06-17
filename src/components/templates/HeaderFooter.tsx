@@ -1,6 +1,6 @@
 import { ReactNode, VFC } from 'react';
-import { Footer } from '../organisum/layout/footer/Footer';
-import { Header } from '../organisum/layout/header/Header'
+import { Footer } from '../organisum/footer/Footer';
+import { Header } from '../organisum/header/Header'
 
 type Props = {
   children: ReactNode;

@@ -1,6 +1,6 @@
 import { useContext, useEffect, VFC } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { StateContext } from "../../../../providers/StateProvider";
+import { StateContext } from "../../../providers/StateProvider";
 import styles from "./Header.module.css";
 
 export const Header: VFC = () => {

@@ -2,8 +2,8 @@ import { useForm } from "react-hook-form";
 import { Button } from "@chakra-ui/react";
 import styles from "./ContactForm.module.css";
 import { Spinner } from "@chakra-ui/react";
-import { useContact } from "../../../../hooks/useContact";
-import {Input} from "../../../../types/InputTypes"
+import { useContact } from "../../../hooks/useContact";
+import {Input} from "../../../types/InputTypes"
 
 
 

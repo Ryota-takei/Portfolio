@@ -1,4 +1,4 @@
-import { ContactForm } from "../../organisum/layout/contactForm/ContactForm";
+import { ContactForm } from "../../organisum/contactForm/ContactForm";
 
 import styles from "./Contact.module.css";
 

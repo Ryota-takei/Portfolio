@@ -8,7 +8,7 @@ export const Works: VFC = () => {
     <Box bg="gray.50" minH="100vh" pt={{base:"20px",md:"100px"}} mt="10">
       <WorkCard
         title="MoreCon"
-        imageUrl="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/1233228/ec368131-2e26-fe18-50f0-733c4a9231ea.gif"
+        imageUrl="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/1233228/cbe1a6f0-c672-7577-b96b-30902c0a7bc2.gif"
         description="『実現して欲しいサービスがあると人』と『実現できる人』を結んで、もっと便利で住みやすい国にしたいと思い制作しました。"
         qiitaURL="https://qiita.com/takeiin/items/41c3ade449a72f2dc3fa"
         readmeURL="https://github.com/Ryota-takei/MoreCon#readme"

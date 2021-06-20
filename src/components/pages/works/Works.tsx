@@ -29,7 +29,7 @@ export const Works: VFC = () => {
       />
       <WorkCard
         title="Weather App"
-        imageUrl="./Weather_App.png"
+        imageUrl="./weather.png"
         description="現在地もしくは検索した地域の天気情報を取得して表示するアプリです。外部API(OpenWeatherAPI,GoogleMapAPI)に慣れる一環で作成しました。"
         qiitaURL="https://qiita.com/takeiin/items/e4cbc29be1c359eeee10"
         readmeURL="https://github.com/Ryota-takei/weather_app#readme"

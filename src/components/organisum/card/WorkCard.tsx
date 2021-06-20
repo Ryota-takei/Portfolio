@@ -1,4 +1,12 @@
-import { Box, Heading, HStack, Image, Stack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  HStack,
+  Image,
+  Stack,
+  Text,
+  Flex,
+} from "@chakra-ui/react";
 import { MdDescription } from "react-icons/md";
 import { BsPencil } from "react-icons/bs";
 import { AiFillGithub } from "react-icons/ai";
@@ -29,7 +37,7 @@ export const WorkCard: React.VFC<Prop> = (props) => {
     isEven,
   } = props;
   return (
-    <Box bg={isEven ? undefined : "white"}>
+    <Box bg={!isEven ? undefined : "white"} mb="10">
       <Stack
         w={{ base: "100%", md: "80%" }}
         mx="auto"
@@ -47,9 +55,14 @@ export const WorkCard: React.VFC<Prop> = (props) => {
             mx="auto"
             mb={{ base: "5", md: "0" }}
           />
-          <Stack p="2" spacing="8" color="gray.700">
-            <Stack>
-              <HStack>
+          <Stack
+            p="2"
+            spacing="8"
+            color="gray.700"
+            textAlign={{ base: "center", md: undefined }}
+          >
+            <Stack spacing="3">
+              <HStack mx={{ base: "auto", md: undefined }} spacing="0">
                 <Box color="orange.300">
                   <MdDescription size="25px" />
                 </Box>
@@ -57,8 +70,10 @@ export const WorkCard: React.VFC<Prop> = (props) => {
                   アプリ概要
                 </Heading>
               </HStack>
-              <Text fontWeight="bold">{description}</Text>
-              <Box>
+              <Text fontWeight="bold" textAlign="left">
+                {description}
+              </Text>
+              <Box textAlign="left">
                 更に詳しい解説は
                 <Box
                   fontWeight="semibold"
@@ -83,7 +98,7 @@ export const WorkCard: React.VFC<Prop> = (props) => {
               </Box>
             </Stack>
             <Stack>
-              <HStack>
+              <HStack mx={{ base: "auto", md: undefined }} spacing="0">
                 <Box color="orange.300">
                   <BsPencil size="25px" />
                 </Box>
@@ -93,7 +108,7 @@ export const WorkCard: React.VFC<Prop> = (props) => {
               </HStack>
               <Text fontWeight="bold">{skills}</Text>
             </Stack>
-            <HStack spacing="3">
+            <Flex spacing="3" justifyContent="center">
               <HStack
                 as="a"
                 py="2"
@@ -109,7 +124,7 @@ export const WorkCard: React.VFC<Prop> = (props) => {
                   Githubページ
                 </Heading>
               </HStack>
-              <Box size="30px">/</Box>
+
               <HStack
                 as="a"
                 py="2"
@@ -125,7 +140,7 @@ export const WorkCard: React.VFC<Prop> = (props) => {
                   サイト
                 </Heading>
               </HStack>
-            </HStack>
+            </Flex>
           </Stack>
         </HStack>
       </Stack>

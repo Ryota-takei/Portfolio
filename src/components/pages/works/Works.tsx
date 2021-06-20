@@ -33,7 +33,7 @@ export const Works: VFC = () => {
         description="現在地もしくは検索した地域の天気情報を取得して表示するアプリです。外部API(OpenWeatherAPI,GoogleMapAPI)に慣れる一環で作成しました。"
         qiitaURL="https://qiita.com/takeiin/items/e4cbc29be1c359eeee10"
         readmeURL="https://github.com/Ryota-takei/weather_app#readme"
-        skills="TypeScript/React/ReduxToolkit/Amplify（デプロイ）"
+        skills="TypeScript/React/ReduxToolkit/Amplify"
         githubURL="https://github.com/Ryota-takei/weather_app"
         siteURL="https://main.d3ie72edj5o6du.amplifyapp.com/"
       />
@@ -44,7 +44,7 @@ export const Works: VFC = () => {
         description="React＋Amplifyを用いて作成した本サイトになります。作成したポートフォリオを順次上げていきたいと思います。"
         qiitaURL="https://qiita.com/takeiin/items/9cd76550f8fb9b4311f7"
         readmeURL="https://github.com/Ryota-takei/Portfolio#readme"
-        skills="TypeScript/React/Amplify（デプロイ）"
+        skills="TypeScript/React/Amplify"
         githubURL="https://github.com/Ryota-takei/Portfolio"
         siteURL="https://www.ryota-portfolio.com/"
       />

@@ -70,10 +70,10 @@ export const WorkCard: React.VFC<Prop> = (props) => {
                   アプリ概要
                 </Heading>
               </HStack>
-              <Text fontWeight="bold" textAlign="left">
+              <Text fontWeight="bold" textAlign="center" letterSpacing={1} >
                 {description}
               </Text>
-              <Box textAlign="left">
+              <Box textAlign="center">
                 更に詳しい解説は
                 <Box
                   fontWeight="semibold"

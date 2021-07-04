@@ -17,15 +17,6 @@ export const Footer: VFC = () => {
         <ul className={styles.list}>
           <li>
             <Link
-              to="/"
-              className={styles.link}
-              onClick={() => setMenubarColor(true)}
-            >
-              Top
-            </Link>
-          </li>
-          <li>
-            <Link
               to="/profile"
               className={styles.link}
               onClick={() => setMenubarColor(false)}

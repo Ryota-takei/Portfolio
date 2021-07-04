@@ -37,7 +37,7 @@ export const WorkCard: React.VFC<Prop> = (props) => {
     isEven,
   } = props;
   return (
-    <Box bg={!isEven ? undefined : "white"} mb="10">
+    <Box bg={!isEven ? undefined : "white"} mb="10" >
       <Stack
         w={{ base: "100%", md: "80%" }}
         mx="auto"
@@ -54,6 +54,7 @@ export const WorkCard: React.VFC<Prop> = (props) => {
             w={{ base: "80%", md: "45%" }}
             mx="auto"
             mb={{ base: "5", md: "0" }}
+            mr={{base:"auto", md:"10"}}
           />
           <Stack
             p="2"
@@ -62,7 +63,7 @@ export const WorkCard: React.VFC<Prop> = (props) => {
             textAlign={{ base: "center", md: undefined }}
           >
             <Stack spacing="3">
-              <HStack mx={{ base: "auto", md: undefined }} spacing="0">
+              <HStack textAlign="left" spacing="0">
                 <Box color="orange.300">
                   <MdDescription size="25px" />
                 </Box>
@@ -70,10 +71,10 @@ export const WorkCard: React.VFC<Prop> = (props) => {
                   アプリ概要
                 </Heading>
               </HStack>
-              <Text fontWeight="bold" textAlign="center" letterSpacing={1} >
+              <Text textAlign="left" letterSpacing={1}>
                 {description}
               </Text>
-              <Box textAlign="center">
+              <Box textAlign="left">
                 更に詳しい解説は
                 <Box
                   fontWeight="semibold"
@@ -98,7 +99,7 @@ export const WorkCard: React.VFC<Prop> = (props) => {
               </Box>
             </Stack>
             <Stack>
-              <HStack mx={{ base: "auto", md: undefined }} spacing="0">
+              <HStack textAlign="left" spacing="0">
                 <Box color="orange.300">
                   <BsPencil size="25px" />
                 </Box>
@@ -106,9 +107,9 @@ export const WorkCard: React.VFC<Prop> = (props) => {
                   主な使用技術
                 </Heading>
               </HStack>
-              <Text fontWeight="bold">{skills}</Text>
+              <Text textAlign="left">{skills}</Text>
             </Stack>
-            <Flex spacing="3" justifyContent="center">
+            <Flex spacing="3" justifyContent="left">
               <HStack
                 as="a"
                 py="2"

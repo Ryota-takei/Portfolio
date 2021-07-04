@@ -18,17 +18,15 @@ export const Header: VFC = () => {
       className={menubarColor ? styles.none_color_Header : styles.color_Header}
     >
       <div className={styles.container}>
-        <h3 className={styles.heading}>My portfolio</h3>
-        <ul className={styles.list}>
-          <li>
-            <Link
+        <h3 className={styles.heading}>
+        <Link
               to="/"
               className={styles.link}
               onClick={() => setMenubarColor(true)}
             >
-              Top
-            </Link>
-          </li>
+          My portfolio
+          </Link></h3>
+        <ul className={styles.list}>
           <li>
             <Link
               to="/profile"
